@@ -654,6 +654,14 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-36 {
+  margin-bottom: 9rem;
+}
+
 .block {
   display: block;
 }
@@ -724,10 +732,6 @@ video {
 
 .max-w-\[120px\] {
   max-width: 120px;
-}
-
-.max-w-xs {
-  max-width: 20rem;
 }
 
 .origin-top-left {
@@ -957,6 +961,10 @@ video {
 
 .pb-20 {
   padding-bottom: 5rem;
+}
+
+.pt-48 {
+  padding-top: 12rem;
 }
 
 .text-center {
