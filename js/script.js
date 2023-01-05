@@ -11,6 +11,8 @@ window.onscroll = function () {
         header.classList.remove('navbar-fixed');
         btnBerubah.classList.remove('btn-berubah');
     }
+
+    
 };
 
 // Hamburger
