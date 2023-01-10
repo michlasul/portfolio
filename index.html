@@ -12,12 +12,18 @@
 
     <!-- Header start -->
         <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-            <div class="container">
+            <div class="container relative">
                 <div class="flex items-center justify-between relative">
-                    <a href="#home" class="px-4 flex items-center">
-                        <img src="img/Logo.png" alt="logo" class="w-10 py-6 mr-3">
-                        <h3 id="click-popup" class="font-bold text-xs text-primary px-4 py-1.5 bg-indigo-100 rounded-full uppercase">Siap 🤖</h3>
-                    </a>
+                    <div class="flex justify-start items-center">
+                        <a href="#home" class="px-4">
+                            <img src="img/Logo.png" alt="logo" class="w-10 py-6">
+                        </a>
+                        <a id="click-popup" href="#popup">
+                            <h3 class="font-bold text-xs text-primary px-4 py-1.5 bg-indigo-100 rounded-full uppercase">Siap 🤖</h3>
+                        </a>
+                    </div>
+
+
                     <div class="flex items-center px-4">
                         <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
                             <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
@@ -81,13 +87,15 @@
                         </nav>
                     </div>
                 </div>
-                <div id="popup" class="w-full h-screen flex justify-center items-center p-10 absolute top-0 left-0 hidden transition duration-500">
-                    <div class="p-10 bg-secondary backdrop-blur-md bg-opacity-80 rounded-lg relative">
-                        <p class="text-white font-medium">Lagi nyari yang baru yah? 😌 Eits jangan buru-buru ditutup dong. Kamu scroll ke paling bawah dulu yah!</p>
-                        <div id="close" class="text-white absolute top-4 right-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
-                            </svg>
+                <div id="popup" class="hidden px-4 absolute top-0 right-0 bottom-0 left-0">
+                    <div class="w-full h-screen flex justify-center items-center p-10 transition duration-500">
+                        <div class="p-10 bg-secondary backdrop-blur-lg bg-opacity-80 rounded-lg relative">
+                            <p class="text-white font-medium">Lagi nyari yang baru yah? 😌 Eits jangan buru-buru ditutup dong. Kamu scroll ke paling bawah dulu yah!</p>
+                            <div id="close" class="text-white absolute top-4 right-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,7 +186,6 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                         </a>
-
                     </div>
                 </div>
                 <div class="grid py-8 grid-cols-2 md:grid-cols-4">
