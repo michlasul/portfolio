@@ -26,6 +26,20 @@ hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('hidden');
 });
 
+// pop up
+const popUp = document.getElementById('popup');
+const clickPopup = document.getElementById('click-popup');
+const close = document.getElementById('close');
+
+clickPopup.addEventListener('click', function () {
+   popUp.classList.remove('hidden');
+});
+close.addEventListener('click', function () {
+   popUp.classList.add('hidden');
+});
+
+
+
 // klik diluar hamburger
 window.addEventListener('click', function(e){
     if (e.target !== hamburger && e.target !== navMenu) {
