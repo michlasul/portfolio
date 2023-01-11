@@ -2,16 +2,16 @@
 window.onscroll = function () {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
-    const btnBerubah = document.querySelector('#btn-berubah');
+    const btnBerubah = document.getElementById('btn-berubah');
 
 
     if (window.scrollY > fixedNav) {
         header.classList.add('navbar-fixed');
-        btnBerubah.classList.add('btn-berubah');
+        btnBerubah.classList.add('btn');
 
     } else{
         header.classList.remove('navbar-fixed');
-        btnBerubah.classList.remove('btn-berubah');
+        btnBerubah.classList.remove('btn');
     }
 
 
@@ -37,8 +37,6 @@ clickPopup.addEventListener('click', function () {
 close.addEventListener('click', function () {
    popUp.classList.add('hidden');
 });
-
-
 
 // klik diluar hamburger
 window.addEventListener('click', function(e){
