@@ -1,3 +1,16 @@
+
+// Dropdown menu
+$(window).ready(function (){
+    const hamburger = $('#hamburger');
+    const navMenu = $('#nav-menu');
+
+    hamburger.click(function (){
+        hamburger.toggleClass('hamburger-active');
+        navMenu.slideToggle();
+    })
+});
+
+
 // Navbar fixed
 window.onscroll = function () {
     const header = document.querySelector('header');
@@ -18,13 +31,13 @@ window.onscroll = function () {
 };
 
 // Hamburger
-const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#nav-menu');
-
-hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('hamburger-active');
-    navMenu.classList.toggle('hidden');
-});
+// const hamburger = document.querySelector('#hamburger');
+// const navMenu = document.querySelector('#nav-menu');
+//
+// hamburger.addEventListener('click', function() {
+//     hamburger.classList.toggle('hamburger-active');
+//     navMenu.classList.toggle('hidden');
+// });
 
 // pop up
 const popUp = document.getElementById('popup');
@@ -32,10 +45,10 @@ const clickPopup = document.getElementById('click-popup');
 const close = document.getElementById('close');
 
 clickPopup.addEventListener('click', function () {
-   popUp.classList.remove('hidden');
+    popUp.classList.remove('hidden');
 });
 close.addEventListener('click', function () {
-   popUp.classList.add('hidden');
+    popUp.classList.add('hidden');
 });
 
 // klik diluar hamburger
@@ -44,4 +57,16 @@ window.addEventListener('click', function(e){
         hamburger.classList.remove('hamburger-active');
         navMenu.classList.add('hidden');
     }
+});
+
+$(window).ready(function () {
+
+    $('#hamburger').click(function () {
+        navMenu.slideToggle();
+    });
+
+    $('#nav-menu').click(function () {
+        navMenu.slideToggle();
+    });
+
 });
