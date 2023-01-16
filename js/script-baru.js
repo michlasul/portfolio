@@ -1,16 +1,3 @@
-
-// Dropdown menu
-$(window).ready(function (){
-    const hamburger = $('#hamburger');
-    const navMenu = $('#nav-menu');
-
-    hamburger.click(function (){
-        hamburger.toggleClass('hamburger-active');
-        navMenu.slideToggle();
-    })
-});
-
-
 // Navbar fixed
 window.onscroll = function () {
     const header = document.querySelector('header');
@@ -52,21 +39,22 @@ close.addEventListener('click', function () {
 });
 
 // klik diluar hamburger
-window.addEventListener('click', function(e){
-    if (e.target !== hamburger && e.target !== navMenu) {
-        hamburger.classList.remove('hamburger-active');
-        navMenu.classList.add('hidden');
-    }
-});
+// window.addEventListener('click', function(e){
+//     if (e.target !== hamburger && e.target !== navMenu) {
+//         hamburger.classList.remove('hamburger-active');
+//         navMenu.classList.add('hidden');
+//     }
+// });
 
-$(window).ready(function () {
+// $(window).ready(function () {
+//
+//     $('#hamburger').click(function () {
+//         navMenu.slideToggle();
+//     });
+//
+//     $('#nav-menu').click(function () {
+//         navMenu.slideToggle();
+//     });
+//
+// });
 
-    $('#hamburger').click(function () {
-        navMenu.slideToggle();
-    });
-
-    $('#nav-menu').click(function () {
-        navMenu.slideToggle();
-    });
-
-});
