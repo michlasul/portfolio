@@ -1,6 +1,8 @@
-const MenuItem = ({ children }) => {
+const MenuItem = ({ href, children }) => {
   return (
-    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">{children}</li>
+    <li className="text-slate-800 hover:text-blue-500 cursor-pointer">
+      <a href={href}>{children}</a>
+    </li>
   );
 };
 

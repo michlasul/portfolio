@@ -1,4 +1,5 @@
 import Menu from "../ui/Menu";
+import Button from "../ui/Button";
 
 const Header = () => {
   return (
@@ -12,7 +13,9 @@ const Header = () => {
         <div className="basis-[25%] grow">
           <Menu />
         </div>
-        <div className="basis-[25%] flex justify-end">hello world</div>
+        <div className="basis-[25%] flex justify-end">
+          <Button>Get in touch</Button>
+        </div>
       </div>
     </header>
   );
