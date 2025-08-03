@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <Header />
-      <div className="bg-green-300 flex">
-        <div className="max-w-5xl w-full mx-auto px-[10px] py-12">
+      <div className="flex">
+        <div className="max-w-7xl w-full mx-auto px-5 py-12">
           <h1 className="font-bold text-5xl">Hello World</h1>
         </div>
       </div>
