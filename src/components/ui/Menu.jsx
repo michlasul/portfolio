@@ -3,15 +3,15 @@ import MenuItem from "./MenuItem";
 const Menu = () => {
   return (
     <ul className="flex justify-center gap-x-5">
-      <li>
+      <MenuItem>
         <a href="#">Home</a>
-      </li>
-      <li>
+      </MenuItem>
+      <MenuItem>
         <a href="#">Projects</a>
-      </li>
-      <li>
+      </MenuItem>
+      <MenuItem>
         <a href="#">Contact</a>
-      </li>
+      </MenuItem>
     </ul>
   );
 };
