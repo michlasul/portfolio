@@ -7,7 +7,7 @@ const Projects = () => {
         <div className="bg-slate-100 rounded-2xl py-12">
           <div className="max-w-7xl mx-auto px-5 flex flex-col gap-y-5">
             <h4 className="text-2xl font-medium">Meet some of my works</h4>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <Card
                 imgUrl={
                   "https://i.pinimg.com/1200x/a8/58/8b/a8588b6c1e00a261b854cb61dfac8de2.jpg"
