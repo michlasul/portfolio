@@ -29,13 +29,13 @@ const Menu = () => {
 
       <div
         id="menu"
-        className={`bg-slate-300 absolute z-1 top-17 left-0 right-0 p-5 transition-all duration-300 ease-in-out ${
+        className={`bg-slate-300 absolute z-1 top-17 left-0 right-0 p-5 md:pointer-events-auto md:bg-inherit md:translate-y-0 md:static md:opacity-100 transition-all duration-300 ease-in-out ${
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-5 pointer-events-none"
         }`}
       >
-        <ul className="font-medium flex flex-col gap-y-2.5 md:justify-center md:gap-x-20 ">
+        <ul className="font-medium flex flex-col gap-y-2.5 md:justify-center md:flex-row md:gap-x-5">
           <MenuItem>Home</MenuItem>
           <MenuItem>Projects</MenuItem>
           <MenuItem>Contact</MenuItem>
