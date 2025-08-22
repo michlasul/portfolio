@@ -6,7 +6,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="md:hidden">
+      <div className="flex items-center justify-center md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-controls="menu"

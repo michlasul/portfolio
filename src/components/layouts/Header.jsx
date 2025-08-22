@@ -14,10 +14,10 @@ const Header = () => {
             </span>
           </p>
         </div>
-        <div className="basis-fit order-3 md:basis-1/4">
+        <div className="basis-1/2 flex justify-end items-center order-3 md:basis-1/4">
           <Menu />
         </div>
-        <div className="basis-fit order-2 sm:flex md:order-3 md:basis-1/4 md:justify-end">
+        <div className="hidden basis-fit order-2 sm:flex md:order-3 md:basis-1/4 md:justify-end">
           <Button>Get in touch</Button>
         </div>
       </div>
